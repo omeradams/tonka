@@ -1,0 +1,26 @@
+getgenv().Tonka = {
+    TonkaSilent = {
+        Enabled = true,
+        Part = "HumanoidRootPart",
+        Pred = 0.119,
+        ClosestPart = true,
+        Keybind = "b",
+        DistanceDivided = 2, -- this divides the dides the distance of the closest body part so how far or close your mouse has to be from the next body part (2, 0.5, and 1.5 recommended) use 1 for regular
+        UnlockOnDeath = false,
+        UnlockOnYourDeath = true,
+        AntiGroundShots = true
+    },
+    Fov = {
+        Visible = true,
+        Radius = 50
+    },
+    Resolver = {
+        Enabled = {false, 5, -5}, -- two numbers are min and maxium 5 is recomended
+        DisableOnAnti = {
+            Enabled = false,
+            Min = -10,
+            Max = 10
+        }
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/omeradams/tonka/main/tonka"))()
